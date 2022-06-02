@@ -9,12 +9,12 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <nav className="nav-wrapper">
-      <div className='nav-left'>
-        <div className='nav-name'>Pooja Paul</div>
+    <nav className="nav__wrapper">
+      <div className='nav__left'>
+        <div className='nav__name'>Pooja Paul</div>
       </div>
-      <div className='nav-right'>
-      <div className='nav-list'>
+      <div className='nav__right'>
+      <div className='nav__list'>
           <ul>
             <li>Home</li>
             <li>Services</li>
@@ -22,7 +22,7 @@ const Navbar = () => {
             <li>Portfolio</li>
           </ul>
       </div>
-      <button className='contact'>Contact Me</button>
+      <button className='button nav__contact'>Contact Me</button>
       </div>
     </nav>
   )

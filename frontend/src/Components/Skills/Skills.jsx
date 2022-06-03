@@ -1,5 +1,5 @@
 import React from "react";
-import "./Testimonial.css";
+import "./Skills.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
@@ -10,7 +10,7 @@ import profilePic2 from "../../img/profile2.jpg";
 import profilePic3 from "../../img/profile3.jpg";
 import profilePic4 from "../../img/profile4.jpg";
 
-const Testimonial = () => {
+const Skills = () => {
   const clients = [
     {
       img: profilePic1,
@@ -35,7 +35,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="t-wrapper" id="testimonial">
+    <div className="t-wrapper" id="skills">
       <div className="t-heading">
         <span>Clients always get </span>
         <span>Exceptional Work </span>
@@ -47,13 +47,13 @@ const Testimonial = () => {
       <Swiper
         // install Swiper modules
         modules={[Pagination]}
-        slidesPerView={1}
+        slidesPerView={3}
         pagination={{ clickable: true }}
       >
         {clients.map((client, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="testimonial">
+              <div className="skills">
                 <img src={client.img} alt="" />
                 <span>{client.review}</span>
               </div>
@@ -65,4 +65,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default Skills;

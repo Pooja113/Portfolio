@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import NodeJS from "../../img/Nodejs.png";
+import ReactJS from "../../img/React.png";
+import Wordpress from "../../img/WordPress.png";
+import Javascript from "../../img/Javascript.png";
+import mysql from "../../img/mysql.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
@@ -21,10 +21,10 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+            Works in All these
           </span>
-          <span>Brands & Clients</span>
-          <span>
+          <span>Technologies</span>
+          <span style={{ color: darkMode ? "white" : "" }}>
             Lorem ispum is simpley dummy text of printing of printing Lorem
             <br />
             ispum is simpley dummy text of printingLorem ispum is simpley dummy
@@ -35,7 +35,7 @@ const Works = () => {
             ispum is simpley dummy text of printing
           </span>
           <Link to="contact" smooth={true} spy={true}>
-            <button className="button s-button">Hire Me</button>
+            <button className="button work__button">Hire Me</button>
           </Link>
           <div
             className="blur s-blur1"
@@ -47,27 +47,30 @@ const Works = () => {
       </div>
       <div className="w-right">
         <motion.div
-          initial={{ rotate: 45 }}
+          initial={{ rotate: 15 }}
           whileInView={{ rotate: 0 }}
           viewport={{ margin: "-40px" }}
           transition={{ duration: 3.5, type: "spring" }}
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={ReactJS} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={NodeJS} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={Wordpress} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={Javascript} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={mysql} alt="" />
           </div>
+          
+
+          
         </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>

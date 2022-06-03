@@ -1,48 +1,50 @@
-.nav__wrapper{
+.n-wrapper {
   height: 10vh;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
 }
-.nav__left{
+.n-left {
   flex: 1;
   align-items: center;
+  justify-content: left;
   display: flex;
   gap: 2rem;
 }
-.nav__name{
+
+.n-name {
   font-size: 1.3rem;
   font-weight: bold;
 }
-.nav__right{
-  display: flex;
+.n-right {
   flex: 1;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-weight: 400;
 }
-.nav__list{
+
+.n-list {
   flex: 10;
 }
-.nav__list>ul{
+.n-list > ul {
   display: flex;
   gap: 2rem;
   margin-right: 4rem;
 }
-.nav__list>ul>li{
-  list-style: none;
-}
 
-.nav__list>ul>li:hover{
-  cursor: pointer;
+.n-list > ul :hover {
   color: var(--orange);
+  cursor: pointer;
 }
 
-.nav__contact {
+.n-button {
   flex: 2;
 }
 
 @media screen and (max-width: 480px) {
-  .nav__list {
+  .n-list {
     display: none;
   }
 }

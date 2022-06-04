@@ -1,14 +1,15 @@
 .nav__wrapper {
   display: flex;
-  justify-content: space-between;
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
+  align-items: center;
+  position: sticky;
+  top: 0px;
   z-index: 10;
+  justify-content: space-evenly;
+  left: 0;
+  padding: 1% 0 0 0 ;
 }
 .nav__left {
-  flex: 1;
+  flex: 0.35;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -17,11 +18,11 @@
 
 .logo {
   font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
+  cursor: pointer;
 }
 .nav__right {
-  flex: 1;
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -39,22 +40,24 @@
 }
 .nav__list > ul > li{
   list-style: none;
+  font-size: 1.2rem;
 }
 
 .nav__button {
   margin: 10px;
 }
 
-@media screen and (max-width: 480px) {
-  .nav__wrapper{
-    padding-top: 1rem;
+@media screen and (max-width: 860px) {
+  .nav__wrapper {
+    flex-direction: column;
   }
-  
-  .nav__right{
-    flex: 0;
-  }
-  .nav__list {
+  .nav__list > ul {
     display: none;
   }
-
+  .nav__right {
+    flex-direction: column;
+  }
+  .nav__list > ul > li{
+    font-size: 1rem;
+  }
 }

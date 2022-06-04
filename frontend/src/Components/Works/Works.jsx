@@ -7,7 +7,6 @@ import Javascript from "../../img/Javascript.png";
 import mysql from "../../img/mysql.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -16,15 +15,10 @@ const Works = () => {
   // transition
   return (
     <div className="works" id="works">
-      {/* left side */}
-      <div className="w-left">
-        <div className="awesome">
-          {/* dark Mode */}
-          <span style={{ color: darkMode ? "white" : "" }}>
-            Works in All these
-          </span>
+      <div className="work__left">
+          <span style={{ color: darkMode ? "white" : "" }}>Works in All these</span>
           <span>Technologies</span>
-          <span style={{ color: darkMode ? "white" : "" }}>
+          <p style={{ color: darkMode ? "white" : "" }}>
             Lorem ispum is simpley dummy text of printing of printing Lorem
             <br />
             ispum is simpley dummy text of printingLorem ispum is simpley dummy
@@ -33,19 +27,17 @@ const Works = () => {
             y dummy text of printingLorem
             <br />
             ispum is simpley dummy text of printing
-          </span>
-          <Link to="contact" smooth={true} spy={true}>
-            <button className="button work__button">Hire Me</button>
-          </Link>
+          </p>
+      
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
-          ></div>
+          >
         </div>
 
         {/* right side */}
       </div>
-      <div className="w-right">
+      <div className="work__right">
         <motion.div
           initial={{ rotate: 15 }}
           whileInView={{ rotate: 0 }}
@@ -67,14 +59,8 @@ const Works = () => {
           </div>
           <div className="w-secCircle">
             <img src={mysql} alt="" />
-          </div>
-          
-
-          
-        </motion.div>
-        {/* background Circles */}
-        <div className="w-backCircle blueCircle"></div>
-        <div className="w-backCircle yellowCircle"></div>
+          </div> 
+        </motion.div>      
       </div>
     </div>
   );

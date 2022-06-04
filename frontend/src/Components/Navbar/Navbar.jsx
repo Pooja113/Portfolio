@@ -11,14 +11,18 @@ const Navbar = () => {
   return (
     <div className="nav__wrapper" id="Navbar" style={{ backgroundColor: darkMode ? "black" : "white" }} >
       <div className="nav__left"  style={{ color: darkMode ? "white" : "black" }}>
-        <div className="logo">Pooja</div>
+        <div className="logo">
+          <Link to="home" spy={true} smooth={true}>
+              Pooja
+          </Link>
+        </div>
         <Toggle />
       </div>
       <div className="nav__right"  style={{ color: darkMode ? "white" : "black" }}>
         <div className="nav__list">
           <ul>
             <li>
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+              <Link to="home" spy={true} smooth={true}>
                 Home
               </Link>
             </li>
@@ -28,7 +32,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="works" spy={true} smooth={true}>
+              <Link to="experience" spy={true} smooth={true}>
                 Experience
               </Link>
             </li>
@@ -44,7 +48,9 @@ const Navbar = () => {
         <button className="button nav__button">Contact</button>
         </Link>
       </div>
+
     </div>
+
   );
 };
 

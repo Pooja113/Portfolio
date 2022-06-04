@@ -24,10 +24,9 @@ function App() {
       <Intro />
       <About />
       <Experience />
-      <Works />
-      <Portfolio />
       <Contact />
       <Footer />
+
     </div>
   );
 }

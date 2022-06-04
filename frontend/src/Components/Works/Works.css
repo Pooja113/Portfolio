@@ -1,38 +1,38 @@
 .works {
   padding: 0 4rem;
   display: flex;
-  margin: 5rem 0;
-  align-items: center;
-}
-/* left side */
-.awesome {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  margin: 3rem 0;
+  width: 100%;
 }
 
-.awesome > :nth-child(1) {
+.work__left{
+  width: 55%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
+
+.work__left > :nth-child(1) {
   color: var(--black);
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
-.awesome > :nth-child(2) {
+.work__left > :nth-child(2) {
   color: var(--orange);
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
-.awesome > :nth-child(3) {
-  color: var(--gray);
-  font-size: 14px;
+.work__left> p {
+  color: var(--black);
+  font-size: 18px;
   margin-top: 1rem;
-}
-.work__button {
-  margin-top: 3rem;
 }
 
 /* right side */
-.w-right {
-  position: relative;
+.work__right {
+  width: 45%;
+  margin-top: 2rem;
 }
 
 .w-mainCircle {
@@ -44,7 +44,6 @@
   box-shadow: var(--smboxShadow);
   top: 2rem;
   background: white;
-  /* darkMode */
   z-index: 2;
 }
 .w-mainCircle > * {
@@ -85,7 +84,7 @@
 }
 
 .w-secCircle > img {
-  transform: scale(0.6);
+  transform: scale(0.45);
 }
 
 .w-backCircle {
@@ -107,25 +106,40 @@
   top: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .works {
-    flex-direction: column;
-    height: 55rem;
+    margin: 0;
+    flex-direction: column;  
     padding: 0;
-    gap: 5rem;
   }
-
-  .w-right {
-    display: flex;
-    align-items: flex-start;
-    justify-content:flex-start;
-    transform: scale(0.7);
+  .work__left, .work__right{
+    width: 100%;
   }
+  
   .w-mainCircle{
-    position: static;
+    left: 3rem;
+    width: 14rem;
+    height: 14rem;
   }
-  .w-backCircle{
-    left: 8rem!important;
+  .w-mainCircle > :nth-child(1) {
+    top: -2rem;
+    left: 5rem;
+  }
+  .w-mainCircle > :nth-child(2) {
+    left: -3rem;
+    top: 5rem;
+  }
+  .w-mainCircle > :nth-child(3) {
+    left: 5rem;
+    top: 5rem;
+  }
+  .w-mainCircle > :nth-child(4) {
+    left: 13rem;
+    top: 5rem;
+  }
+  .w-mainCircle > :nth-child(5) {
+    left: 5rem;
+    top: 12rem;
   }
 
 }

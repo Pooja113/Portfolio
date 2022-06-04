@@ -1,15 +1,10 @@
 .intro {
   display: flex;
-  margin-top: 8rem;
+  margin-top: 2rem;
+  flex-direction: column;
+  padding: 0 4%;
 }
 
-.intro__left {
-  display: flex;
-  flex: 0.45;
-  flex-direction: column;
-  gap: 2rem;
-  
-}
 .intro__name {
   display: flex;
   flex-direction: column;
@@ -19,16 +14,19 @@
 .intro__name > :nth-child(1) {
   color: var(--black);
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 5rem;
 }
+
 .intro__name > :nth-child(2) {
   color: var(--orange);
-  font-size: 2.4rem;
+  text-align: center;
+  /* font-weight: bold; */
+  font-size: 4rem;
 }
 .intro__name > :nth-child(3) {
   color: var(--orange);
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 .intro__name > :nth-child(4) {
   font-weight: 600;
@@ -36,74 +34,34 @@
   color: var(--gray);
   margin-bottom: 2rem;
 }
+.hire__space{
+  display: flex;
+  justify-content: space-between;
+}
 
-.intro__icons > a >* {
-  transform: scale(0.5);
-  transform-origin: left;
+.intro__icons > a > * {
+  transform: scale(0.4);
+  transform-origin:  top right;
 }
 .intro__icons > *:hover {
   cursor: pointer;
 }
 
-.i-right {
-  flex: 0.55;
-  position: relative;
-}
-.i-right > * {
-  position: absolute;
-  z-index: 1;
-}
-.i-right > :nth-child(1) {
-  transform: scale(0.69);
-  left: -15%;
-  top: -9%;
-}
-.i-right > :nth-child(2) {
-  top: -4.6rem;
-  transform: scale(0.67);
-  left: -3rem;
-}
-.i-right > :nth-child(3) {
-  transform: scale(1.4);
-  left: 28%;
-}
-.i-right > :nth-child(4) {
-  transform: scale(0.62);
-  top: -19%;
-  left: -24%;
-  border-radius: 50%;
-  padding: 0;
-}
-
-/* blur */
-.blur {
-  position: absolute;
-  width: 22rem;
-  height: 14rem;
-  border-radius: 50%;
-  background: #edd0ff;
-  filter: blur(212px);
-  z-index: -9;
-  top: -18%;
-  left: 56%;
-  filter: blur(72px);
-}
 
 @media screen and (max-width: 480px) {
-  .intro {
+  .intro__name > :nth-child(1) {
+    font-size: 4rem;
+  }
+  .intro__name > :nth-child(2) {
+    text-align: left;
+  }
+  .intro__name > :nth-child(3) {
+    font-size: 4rem;
+  }
+  .hire__space{
     flex-direction: column;
-    /* gap: 7rem; */
-    height: 64rem;
-
   }
-  .i-right {
-    transform: scale(0.8);
-    left: -3rem;
-  }
-  .i-right .blur {
-    display: none;
-  }
-  .floating-div:nth-of-type(1){
-    top: -7rem !important;
+  .intro__icons > a > * {
+    transform-origin:  left;
   }
 }

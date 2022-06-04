@@ -1,10 +1,27 @@
 .contact-form{
-    padding: 0 4rem;
-    display: flex;
-    margin: 5rem 0;
-    padding-top: 3rem;
+  padding: 0 4rem;
+  display: flex;
+  margin: 6rem 0;
+  width: 100%;
 }
-
+.contact__left{
+    width: 45%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact__left > :nth-child(1) {
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .contact__left > :nth-child(2) {
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+ 
 .c-right{
     display: flex;
     justify-content: center;
@@ -22,8 +39,8 @@
 }
 
 .c-right .user{
-    width: 20rem;
-    height: 2rem;
+    width: 30rem;
+    height: 3rem;
     padding: 0.3em;
     outline: none;
     border: 2px solid var(--orange);
@@ -48,7 +65,9 @@ textarea{
         height: 40rem;
     }
     .c-right .user{
-        width: 16rem;
+        width: 20rem;
     }
-
+    .contact__left{
+        width: 100%;
+    }
 }   

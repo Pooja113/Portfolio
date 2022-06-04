@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
-/* @font-face {
-  font-family: Gumela;
-  src: url('../src/fonts/*');
-} */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;200;600&display=swap');
+
 *{
-font-family: 'Poppins', sans-serif;
-font-weight: normal;
-font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 0%;
+  margin: 0%;
 }
 body{
-margin: 0;
+  margin: 0;
+  position: relative;
 }
 
 :root
@@ -26,7 +26,7 @@ margin: 0;
 }
 
 .app{
-    padding: 0.5rem 3.5rem;
+    /* padding: 0.5rem 3.5rem; */
     overflow: hidden;
     color: var(--black);    
 }
@@ -48,12 +48,7 @@ margin: 0;
     border: 1px solid var(--orange);
     color: var(--orange);
   }
-  @media screen and (max-width: 480px) {
-    .app {
-      padding: 0.5rem 1rem;
 
-    }
-  }
 
   
 

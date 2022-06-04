@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-const navbar = () => {
+import { themeContext } from "../../Context";
+
+
+const Navbar = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="n-wrapper" id="Navbar">
-      {/* left */}
-      <div className="n-left">
-        <div className="n-name">Pooja</div>
+    <div className="nav__wrapper" id="Navbar" style={{ backgroundColor: darkMode ? "black" : "white" }} >
+      <div className="nav__left"  style={{ color: darkMode ? "white" : "black" }}>
+        <div className="logo">Pooja</div>
         <Toggle />
       </div>
-      {/* right */}
-      <div className="n-right">
-        <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
+      <div className="nav__right"  style={{ color: darkMode ? "white" : "black" }}>
+        <div className="nav__list">
+          <ul>
             <li>
               <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
                 Home
@@ -38,11 +41,11 @@ const navbar = () => {
           </ul>
         </div>
         <Link to="contact" spy={true} smooth={true}>
-        <button className="button n-button">Contact</button>
+        <button className="button nav__button">Contact</button>
         </Link>
       </div>
     </div>
   );
 };
 
-export default navbar;
+export default Navbar;

@@ -30,13 +30,7 @@ const About = () => {
         <div className="blur about__blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="profile__pic">
-        <motion.div
-          initial={{ left: "25rem" }}
-          whileInView={{ left: "9rem" }}
-          transition={transition}
-        >
         <img src={profile} alt="" />
-        </motion.div>
         <div
           className="blur about__blur2"
           style={{ background: "var(--purple)" }}

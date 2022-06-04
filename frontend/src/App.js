@@ -4,7 +4,6 @@ import "./App.css";
 import Experience from "./components/Experience/Experience";
 import Works from "./components/Works/Works";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";

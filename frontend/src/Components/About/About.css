@@ -1,5 +1,5 @@
 section{
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .about {
@@ -40,7 +40,7 @@ section{
 
 @media screen and (max-width: 820px) {
   .about {
-    margin: 0;
+    margin: 4rem 0;
     flex-direction: column;  
     padding: 0;
   }

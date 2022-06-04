@@ -14,7 +14,7 @@ const About = () => {
   };
 
   return (
-    <section  id="about">
+    <section id="about">
     <div className="about">
       <div className="about__text" >
         <span  style={{ color: darkMode ? "white" : "" }}>About Me</span>

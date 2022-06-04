@@ -1,5 +1,5 @@
 header{
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 .intro {
   display: flex;
@@ -52,6 +52,9 @@ header{
 
 
 @media screen and (max-width: 480px) {
+  header{
+    padding-top: 4rem;
+  }
   .intro__name > :nth-child(1) {
     font-size: 4rem;
   }

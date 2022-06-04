@@ -52,11 +52,15 @@
   .nav__wrapper {
     flex-direction: column;
   }
-  /* .nav__list > ul {
-    display: none;
-  } */
+ 
   .nav__right {
     flex-direction: column;
+  }
+  .nav__list > ul {
+    margin: 0 2rem 0 0;
+  }
+  .logo{
+    font-size: 2rem;
   }
   .nav__list > ul > li{
     font-size: 1rem;

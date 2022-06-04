@@ -5,7 +5,7 @@
   position: relative;
   margin-top: -7rem;
 }
-.f-content {
+.footer__content {
   position: absolute;
   display: flex;
   align-items: center;
@@ -16,17 +16,17 @@
   gap: 2rem;
   color: white;
 }
-.f-icons {
+.footer__icons {
   display: flex;
   gap: 2rem;
 }
-.f-icons:hover{
+.footer__icons:hover{
   cursor: pointer;
 
 }
 
 @media screen and (max-width: 480px){
-  .f-content{
+  .footer__content{
     transform: scale(.5);
   }
 }

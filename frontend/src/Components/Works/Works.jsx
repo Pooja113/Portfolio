@@ -5,20 +5,17 @@ import ReactJS from "../../img/React.png";
 import Wordpress from "../../img/WordPress.png";
 import Javascript from "../../img/Javascript.png";
 import mysql from "../../img/mysql.png";
-import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 const Works = () => {
   // context
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
 
   // transition
   return (
     <div className="works" id="works">
       <div className="work__left">
-          <span style={{ color: darkMode ? "white" : "" }}>Works in All these</span>
+          <span>Works in All these</span>
           <span>Technologies</span>
-          <p style={{ color: darkMode ? "white" : "" }}>
+          <p>
             Lorem ispum is simpley dummy text of printing of printing Lorem
             <br />
             ispum is simpley dummy text of printingLorem ispum is simpley dummy

@@ -25,14 +25,14 @@ section{
     font-weight: bold;
   }
  
-.c-right{
+.contact__right{
     display: flex;
     justify-content: center;
     position: relative;
     flex: 1;
 }
 
-.c-right>form
+.contact__right>form
 {
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ section{
     
 }
 
-.c-right .user{
+.contact__right .user{
     width: 30rem;
     height: 3rem;
     padding: 0.3em;
@@ -55,7 +55,7 @@ textarea{
     height: 4rem!important;
 }
 
-.c-blur1{
+.contact__blur1{
     top: 1rem;
     left: 8rem;
 }
@@ -67,7 +67,7 @@ textarea{
         gap: 5rem;
         height: 40rem;
     }
-    .c-right .user{
+    .contact__right .user{
         width: 20rem;
     }
     .contact__left{

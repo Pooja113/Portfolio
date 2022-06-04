@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import Toggle from "../Toggle/Toggle";
+import React from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 
@@ -13,7 +12,6 @@ const Navbar = () => {
               Pooja
           </Link>
         </div>
-        <Toggle />
       </div>
       <div className="nav__right">
         <div className="nav__list">

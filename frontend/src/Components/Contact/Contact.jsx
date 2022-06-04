@@ -30,6 +30,7 @@ const Contact = () => {
   };
 
   return (
+    <section  id="contact">
     <div className="contact-form">
       <div className="contact__left">
           <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
@@ -53,6 +54,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    </section>
   );
 };
 

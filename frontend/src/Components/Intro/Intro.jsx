@@ -11,10 +11,11 @@ const Intro = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="intro">
+    <header id="home">
+    <div className="intro"   >
         <div className="intro__name" >
           <span style={{ color: darkMode ? "white" : "" }} >WELCOME! </span>
-          <span  id="home">I AM</span> <span>Pooja Paul</span>
+          <span>I AM</span> <span>Pooja Paul</span>
           <span  style={{ color: darkMode ? "white" : "" }}>
             Full Stack Web Developer
           </span>
@@ -34,11 +35,10 @@ const Intro = () => {
             </Link>
           </div>
         </div>
-        <div  id="about"></div>
-
         </div>
 
     </div>
+    </header>
   );
 };
 

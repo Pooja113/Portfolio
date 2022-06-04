@@ -14,6 +14,7 @@ const About = () => {
   };
 
   return (
+    <section  id="about">
     <div className="about">
       <div className="about__text" >
         <span  style={{ color: darkMode ? "white" : "" }}>About Me</span>
@@ -26,13 +27,12 @@ const About = () => {
         <a href={Resume} download>
           <button className="button about__button">Download CV</button>
         </a>
-        <div  id="experience"></div>
-
       </div>
       <div className="profile__pic">
         <img src={profile} alt="" />
       </div>
     </div>
+    </section>
   );
 };
 

@@ -9,7 +9,7 @@ const Navbar = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="nav__wrapper" id="Navbar" style={{ backgroundColor: darkMode ? "black" : "white" }} >
+    <nav className="nav__wrapper" id="Navbar" style={{ backgroundColor: darkMode ? "black" : "white" }} >
       <div className="nav__left"  style={{ color: darkMode ? "white" : "black" }}>
         <div className="logo">
           <Link to="home" spy={true} smooth={true}>
@@ -49,7 +49,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-    </div>
+    </nav>
 
   );
 };

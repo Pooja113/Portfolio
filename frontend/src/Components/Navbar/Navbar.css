@@ -1,12 +1,13 @@
 .nav__wrapper {
   display: flex;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 10;
   justify-content: space-evenly;
   left: 0;
   padding: 1% 0 0 0 ;
+  width: 100%;
 }
 .nav__left {
   flex: 0.35;
@@ -51,9 +52,9 @@
   .nav__wrapper {
     flex-direction: column;
   }
-  .nav__list > ul {
+  /* .nav__list > ul {
     display: none;
-  }
+  } */
   .nav__right {
     flex-direction: column;
   }

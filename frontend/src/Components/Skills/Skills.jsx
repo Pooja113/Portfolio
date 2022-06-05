@@ -1,67 +1,65 @@
 import React from "react";
 import "./Skills.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-
-import { Pagination } from "swiper";
-import "swiper/css/pagination";
-import profilePic1 from "../../img/profile1.jpg";
-import profilePic2 from "../../img/profile2.jpg";
-import profilePic3 from "../../img/profile3.jpg";
-import profilePic4 from "../../img/profile4.jpg";
 
 const Skills = () => {
-  const clients = [
-    {
-      img: profilePic1,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-    {
-      img: profilePic2,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-    {
-      img: profilePic3,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-    {
-      img: profilePic4,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-  ];
-
   return (
-    <div className="t-wrapper" id="skills">
-      <div className="t-heading">
-        <span>Clients always get </span>
-        <span>Exceptional Work </span>
-        <span>from me...</span>
-      <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
-      <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
-
+    <section id="skills" >
+      <div className="skills__wrapper">
+        <div className="skills">
+          <div className="skills__heading">
+            <span>Skills</span>
+          </div>
+          
+          <div className="core__skills">
+            <div className="core__skill">
+              <h2 className="core__skill__heading">WordPress Developer</h2>
+              <p className="core__skill__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore odit minus?
+              </p>
+            </div>
+            <div className="core__skill">
+              <h2 className="core__skill__heading">MERN Stack Developer</h2>
+              <p className="core__skill__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore odit minus?
+              </p>
+            </div>
+            <div className="core__skill">
+              <h2 className="core__skill__heading">Problem Solving</h2>
+              <p className="core__skill__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore odit minus?
+              </p>
+            </div>
+          </div>
+          <div className="tech__skills">
+            <div className="tech__heading">
+              Technologies, I'm Familiar with
+            </div>
+            <div className="tech__list">
+              <div>HTML5</div>
+              <div>CSS3</div>
+              <div>Tailwind</div>
+              <div>Bootstrap</div>
+              <div>PHP</div>
+              <div>Javascript</div>
+              <div>jQuery</div>
+              <div>JSON</div>
+              <div>AJAX</div>
+              <div>ReactJS</div>
+              <div>Redux</div>
+              <div>NodeJS</div>
+              <div>ExpressJS</div>
+              <div>Mongoose</div>
+              <div>MongoDB</div>
+              <div>Firebase</div>
+              <div>MySQL</div>
+              <div>Github</div>
+              <div>Git</div>
+              <div>Heroku</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <Swiper
-        // install Swiper modules
-        modules={[Pagination]}
-        slidesPerView={3}
-        pagination={{ clickable: true }}
-      >
-        {clients.map((client, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <div className="skills">
-                <img src={client.img} alt="" />
-                <span>{client.review}</span>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </div>
+    </section>
   );
 };
 

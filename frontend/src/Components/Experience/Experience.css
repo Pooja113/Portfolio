@@ -1,13 +1,8 @@
-section#experience{
-    padding-top: 2rem;
-  }
-  
 .experience {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  margin: 6rem 0;
   color: var(--black);
 }
 .achievement{

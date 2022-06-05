@@ -13,16 +13,16 @@ section{
     display: flex;
     flex-direction: column;
   }
+ .contact__left>*{
+  font-size: 3rem;
+  font-weight: bold;
+ }
   
   .contact__left > :nth-child(1) {
     color: var(--black);
-    font-size: 3rem;
-    font-weight: bold;
   }
   .contact__left > :nth-child(2) {
     color: var(--orange);
-    font-size: 3rem;
-    font-weight: bold;
   }
  
 .contact__right{
@@ -60,12 +60,14 @@ textarea{
     left: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 860px) {
     .contact-form{
         padding: 0;
         flex-direction: column;
         gap: 5rem;
-        height: 40rem;
+    }
+    .contact__left>*{
+      font-size: 2rem;
     }
     .contact__right .user{
         width: 20rem;

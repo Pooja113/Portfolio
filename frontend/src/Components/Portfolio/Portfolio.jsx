@@ -1,39 +1,62 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Portfolio.css";
-import { Swiper, SwiperSlide } from "swiper/react"
-import "swiper/css";
 import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
+import { Link } from "react-scroll";
+
 const Portfolio = () => {
   return (
-    <div className="portfolio" id="portfolio">
-      {/* heading */}
-      <span>Recent Projects</span>
-      <span>Portfolio</span>
-
-      {/* slider */}
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        grabCursor={true}
-        className="portfolio-slider"
-      >
-        <SwiperSlide>
-          <img src={Sidebar} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Ecommerce} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={MusicApp} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={HOC} alt="" />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+  
+    <section id="portfolio" >
+      <div className="portfolio__wrapper">
+        <div className="projects">
+          <div className="portfolio__heading">
+            <span>Projects</span>
+          </div>  
+          <div className="portfolio__items">
+            <Link to="/">
+              <div className="portfolio__item">
+              <img src={HOC} alt="" />
+                <h2 className="project__heading">WordPress Developer</h2>
+                <p className="project__tech">
+                  Lorem, ipsum dolor sit amet 
+                </p>
+              </div>
+            </Link>
+            <div className="portfolio__item">
+              <img src={Sidebar} alt="" />
+              <h2 className="project__heading">WordPress Developer</h2>
+              <p className="project__tech">
+                Lorem, ipsum dolor sit amet
+              </p>
+            </div>
+            <div className="portfolio__item">
+              <img src={MusicApp} alt="" />
+              <h2 className="project__heading">WordPress Developer</h2>
+              <p className="project__tech">
+                Lorem, ipsum dolor sit amet
+              </p>
+            </div>
+            <div className="portfolio__item">
+              <img src={Ecommerce} alt="" />
+              <h2 className="project__heading">WordPress Developer</h2>
+              <p className="project__tech">
+                Lorem, ipsum dolor sit amet
+              </p>
+            </div>
+            <div className="portfolio__item">
+              <img src={HOC} alt="" />
+              <h2 className="project__heading">WordPress Developer</h2>
+              <p className="project__tech">
+                Lorem, ipsum dolor sit amet
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

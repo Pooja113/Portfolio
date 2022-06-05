@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./About.css";
 import profile from "../../img/boy.png";
 import Resume from './resume.pdf';
@@ -13,7 +13,7 @@ const About = () => {
         <span>
           Throughout my 6+ years of development experience, I worked in different technologies, building products from the ground up or implementing new features.
         </span>
-        <span>I have worked on WordPress and MERN technologies, and I have completed a wide range of projects using them. I'm always happy to discuss my client's needs and find the best solutions for them.</span>
+        <span>I have worked on WordPress and MERN technologies, and completed a wide range of projects using them. I'm always happy to find the best solutions for any problems .</span>
         <span>I consider myself passionate and hardworking. My passion is making ideas come to life, be it working solo, as part of a team or leading a team of fellow developers.</span>
         <a href={Resume} download>
           <button className="button about__button">Download CV</button>

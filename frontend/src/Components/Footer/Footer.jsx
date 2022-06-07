@@ -1,10 +1,9 @@
 import React from "react";
 import "./Footer.css";
 import Wave from "../../img/wave.png";
-import Insta from "@iconscout/react-unicons/icons/uil-instagram";
-import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
-import Gitub from "@iconscout/react-unicons/icons/uil-github";
-import { Link } from "react-scroll";
+import LinkedIn from "../../img/linkedin.png";
+import Twitter from "../../img/twitter.png";
+import Github from "../../img/github.png";
 
 const Footer = () => {
   return (
@@ -13,15 +12,15 @@ const Footer = () => {
       <div className="footer__content">
         <span>poojapaul.92@gmail.com</span>
         <div className="footer__icons">
-            <Link to="/">
-              <Insta color="white" size={"3rem"} />
-            </Link>
-            <Link to="/">
-              <Facebook color="white" size={"3rem"} />
-            </Link>
-            <Link to="/">
-              <Gitub color="white" size={"3rem"} />
-            </Link>
+            <a href="https://www.linkedin.com/in/pooja-paul/" target="blank">
+              <img src={LinkedIn} alt="" />
+            </a>
+            <a href="https://twitter.com/poojapaul135" target="blank">
+               <img src={Twitter} alt="" />
+            </a>
+            <a href="https://github.com/Pooja113  " target="blank">
+              <img src={Github} alt="" />
+            </a>
         </div>
       </div>
     </div>

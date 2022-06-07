@@ -1,8 +1,8 @@
+import Github from "../../img/github.png";
 import React, { useContext } from "react";
 import "./Intro.css";
-import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import Twitter from "../../img/twitter.png";
 import { Link } from "react-scroll";
 const Intro = () => {
   return (
@@ -19,15 +19,15 @@ const Intro = () => {
             <button className="button intro__button">Hire me</button>
           </Link>
           <div className="intro__icons">
-            <Link to="/">
-              <img src={Github} alt="" />
-            </Link>
-            <Link to="/">
-              <img src={LinkedIn} alt="" />
-            </Link>
-            <Link to="/">
-              <img src={Instagram} alt="" />
-            </Link>
+          <a href="https://www.linkedin.com/in/pooja-paul/" target="blank">
+            <img src={LinkedIn} alt="" />
+          </a>
+          <a href="https://twitter.com/poojapaul135" target="blank">
+            <img src={Twitter} alt="" />
+          </a>
+          <a href="https://github.com/Pooja113  " target="blank">
+            <img src={Github} alt="" />
+          </a>
           </div>
         </div>
         </div>

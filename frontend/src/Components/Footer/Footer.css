@@ -18,7 +18,11 @@
 }
 .footer__icons {
   display: flex;
-  gap: 2rem;
+}
+.footer__icons > a > * {
+  transform: scale(0.4);
+  filter: brightness(0) invert(1);
+
 }
 .footer__icons:hover{
   cursor: pointer;

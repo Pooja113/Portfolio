@@ -7,17 +7,26 @@ import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Portfolio from "./components/Portfolio/Portfolio";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 function App() {
   return (
-    <div className="app"    >
-      <Navbar />
-      <Intro />
-      <About />
-      <Experience />
-      <Skills/>
-      <Portfolio />
-      <Contact />
-      <Footer />
+    <div className="app">
+    <Router>
+      
+        <Navbar />
+        <Intro />
+        <About />
+        <Experience />
+        <Skills/>
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </Router>
 
     </div>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import "./Portfolio.css";
 import Sharkcart from "../../img/sharkcart.png";
 import Huddle from "../../img/huddle.png";
+import Eventapp from "../../img/eventapp.png";
 
 const Portfolio = () => {
   return (
@@ -30,8 +31,8 @@ const Portfolio = () => {
                 </a>
             </div>
             <div className="portfolio__item">
-                <a href="https://sharkcart.herokuapp.com/">
-                <img src={Sharkcart} alt="" />
+                <a href="https://events-react-app.netlify.app/">
+                <img src={Eventapp} alt="" />
                 <h2 className="project__heading">SharkCart Ecommerce Project</h2>
                 <p className="project__tech">
                        Lorem, ipsum dolor sit amet 
